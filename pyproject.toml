@@ -4,6 +4,11 @@ version = "0.1.0"
 description = "ILY_Bot"
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
+authors = [
+    {name = "AceKashiwa", email = "payoung@zju.edu.cn"},
+]
+dependencies = []
+license = {text = "MIT"}
 
 [tool.nonebot]
 adapters = [
@@ -13,3 +18,9 @@ adapters = [
 plugins = []
 plugin_dirs = ["src/plugins"]
 builtin_plugins = ["echo"]
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+start = "python bot.py"
