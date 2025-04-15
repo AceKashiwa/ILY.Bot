@@ -83,6 +83,7 @@ dependencies = [
     "win32-setctime==1.2.0",
     "yarl==1.18.3",
     "zstandard==0.23.0",
+    "nonebot-plugin-heweather>=0.8.2",
 ]
 authors = [
     {name = "AceKashiwa", email = "payoung@zju.edu.cn"},
@@ -94,7 +95,7 @@ adapters = [
     { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
     { name = "Console", module_name = "nonebot.adapters.console" }
 ]
-plugins = []
+plugins = ["nonebot_plugin_status", "nonebot_plugin_docs", "nonebot_plugin_translator", "nonebot_plugin_heweather", "nonebot_plugin_memes", "nonebot_plugin_setu_now", "nonebot_plugin_shindan"]
 plugin_dirs = ["src/plugins"]
 builtin_plugins = ["echo"]
 
