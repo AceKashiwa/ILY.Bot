@@ -10,6 +10,13 @@
 
 `ILY_Bot` is a personal bot project built with [NoneBot2](https://nonebot.dev/). It is designed for learning and experimenting with Python and bot development frameworks.
 
+## Features
+
+- **Console Adapter**: Supports Console adapter for local testing.
+- **Plugin Management**: Load plugins directly from `pyproject.toml`.
+- **Code Quality**: Integrated with `ruff` for linting and formatting.
+- **Extensibility**: Easily create and manage custom plugins.
+
 ## Installation
 
 1. Ensure you have Python 3.9 or above installed.
@@ -20,17 +27,30 @@
    pdm install
    ```
 
-## How to start
+## How to Start
 
-1. generate project using `nb create` .
-2. create your plugin using `nb plugin create` .
-3. writing your plugins under `src/plugins` folder.
-4. run your bot using `nb run --reload` .
+1. Generate a project using `nb create`.
+2. Create your plugin using `nb plugin create`.
+3. Write your plugins under the `src/plugins` folder.
+4. Run your bot using:
+
+   ```bash
+   nb run --reload
+   ```
+
+## Changelog
+
+### v0.1.1
+
+- **Feature**: Added support for the Console adapter.
+- **Feature**: Support loading plugin configurations from `pyproject.toml`.
+- **Improvement**: Enhanced code formatting with `ruff`.
+- **Bugfix**: Fixed compatibility issues.
 
 ## Documentation
 
-See [Docs](https://nonebot.dev/)
+For detailed documentation, visit the [NoneBot2 Docs](https://nonebot.dev/).
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.

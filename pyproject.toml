@@ -1,6 +1,6 @@
 [project]
 name = "ILY_Bot"
-version = "0.1.0"
+version = "0.1.1"
 description = "This project is a personal bot designed for learning and experimenting with Python and related frameworks."
 readme = "README.md"
 requires-python = ">=3.9, <4.0"
